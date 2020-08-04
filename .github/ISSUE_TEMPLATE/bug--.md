@@ -1,6 +1,6 @@
 ---
 name: BUG反饋
-about: 反饋BUG給管理們
+about: 想要反饋BUG？請使用這個選項。
 title: "[BUG]"
 labels: bug
 assignees: ''
