@@ -1,4 +1,4 @@
-[中文版本](https://github.com/lewis252310/EDGE/blob/add-readme-and-wiki/README.md)
+[中文版本](https://github.com/lewis252310/EDGE/blob/master/README.md)
 # Welcome
 ## Reporting a BUG
 
