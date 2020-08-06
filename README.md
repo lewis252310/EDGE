@@ -1,4 +1,4 @@
-[English version](https://github.com/lewis252310/EDGE/blob/add-readme-and-wiki/README_en.md)
+[English version](https://github.com/lewis252310/EDGE/blob/master/README_en.md)
 # 歡迎
 ## 回報一個BUG
 
