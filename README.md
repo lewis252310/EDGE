@@ -1,13 +1,13 @@
 [English version](https://github.com/lewis252310/EDGE/blob/master/README_en.md)
 # 歡迎
-## 回報一個BUG
+## [回報一個BUG](https://github.com/lewis252310/EDGE/issues/new?assignees=&labels=bug&template=bug--.md&title=%5BBUG%5D)
 
  1. 點擊上方的[Issues](https://github.com/lewis252310/EDGE/issues)
  2. 進到Issues頁面後，點擊右上方的 "New issue"
  3. 選擇 "BUG反饋"
  4. 填入相關資料
  5. 填妥後點擊右下角的 "Submit new issue"
-## 填寫各種建議
+## [填寫各種建議](https://github.com/lewis252310/EDGE/issues/new?assignees=lewis252310&labels=&template=----.md&title=%5B%E5%BB%BA%E8%AD%B0%5D)
  1. 點擊上方的[Issues](https://github.com/lewis252310/EDGE/issues)
  2. 進到Issues頁面後，點擊右上方的 "New issue"
  3. 選擇 "各種建議"
