@@ -1,6 +1,6 @@
 [中文版本](https://github.com/lewis252310/EDGE/blob/master/README.md)
 # Welcome
-## Reporting a BUG
+## [Reporting a BUG](https://github.com/lewis252310/EDGE/issues/new?assignees=&labels=bug&template=bug--.md&title=%5BBUG%5D)
 
  1. Click [Issues](https://github.com/lewis252310/EDGE/issues) on the top of the screen.
  2. In Issues, click on "New issue".
@@ -8,7 +8,7 @@
  4. Write some thing about the bug.
  5. When you're done, click on "Submit new issue".
 
-## Writing feature requests
+## [Writing feature requests](https://github.com/lewis252310/EDGE/issues/new?assignees=lewis252310&labels=&template=----.md&title=%5B%E5%BB%BA%E8%AD%B0%5D)
 > *Actually the same as above but choose "各種建議" in step 3*
  1. Click [Issues](https://github.com/lewis252310/EDGE/issues) on the top of the screen.
  2. In Issues, click on "New issue".
