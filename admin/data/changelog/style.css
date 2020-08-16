@@ -20,6 +20,12 @@ ul {
     padding-inline-start: 27px;
 }
 
+ul.changes-description {
+    margin-inline-start: 16px;
+    color: #778;
+    font-size: 90%;
+}
+
 section {
     color: #ddd;
     font-family: 'Baloo Tamma 2', Torus, "Noto Sans TC", "Microsoft JhengHei", serif !important;
