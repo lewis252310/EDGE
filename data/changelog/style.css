@@ -3,6 +3,7 @@
 .changes {
     font-size: 14px;
     vertical-align: baseline;
+    scroll-behavior: smooth;
 }
 
 date {
@@ -60,6 +61,11 @@ section {
 }
 
 [id^=change]:target {
+    background-color: #3d3f4b;
+    -webkit-transition: all 0.5s linear;
+}
+
+.highlight {
     background-color: #3d3f4b;
     -webkit-transition: all 0.5s linear;
 }
