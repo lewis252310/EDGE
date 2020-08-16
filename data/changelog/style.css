@@ -22,6 +22,7 @@ ul {
 
 ul.changes-description {
     margin-inline-start: 16px;
+    margin-block-end: 5px;
     color: #778;
     font-size: 90%;
 }
