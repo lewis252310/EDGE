@@ -31,8 +31,12 @@ section {
     font-family: 'Baloo Tamma 2', Torus, "Noto Sans TC", "Microsoft JhengHei", serif !important;
 }
 
-.changelog-head a, a.back {
+.changelog-head a {
     color: #bcf;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
     text-decoration: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -42,14 +46,7 @@ section {
     user-select: none;
 }
 
-.changelog-head a {
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.changelog-head a:hover,a.back:hover {
+.changelog-head a:hover {
     color: #cdf;
 }
 
