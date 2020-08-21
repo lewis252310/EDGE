@@ -22,7 +22,9 @@ ul {
 }
 
 ul.changes-description {
+    line-height: 125%;
     margin-inline-start: 16px;
+    margin-block-start: -2px;
     margin-block-end: 5px;
     color: #778;
     font-size: 90%;
@@ -70,37 +72,19 @@ section {
     -webkit-transition: all 0.5s linear;
 }
 
-@media print,
-screen and (max-width: 720px) {
-    #title .credits {
-        display: block;
-        width: 100%;
-        line-height: 30px;
-        text-align: center
-    }
-
-    #title .credits .left {
-        float: none;
-        display: block
-    }
-
-    #title .credits .right {
-        float: none;
-        display: block
-    }
-}
-
-@media print,
-screen and (max-width: 480px) {
-    #header {
-        margin-top: -20px
-    }
-
+@media screen and (max-width: 800px) {
     section {
-        margin-top: 40px
+      width: 100%;
     }
-
-    nav {
-        display: none
+    ul {
+        padding-inline-start: 0px;
     }
-}
+    ul.changes-description {
+        line-height: 125%;
+        margin-inline-start: 42px;
+        margin-block-start: -2px;
+        margin-block-end: 5px;
+        color: #778;
+        font-size: 90%;
+    }
+  }
