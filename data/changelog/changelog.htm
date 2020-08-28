@@ -10,6 +10,41 @@
     <section>
         <h2>更新日誌</h2>
         <p style="font-size: 14px;font-style: italic;color: #888;">* All times are in Asia/Taipei Timezone</p>
+        <!-- 0005 -->
+        <div class="changelog" id="change005">
+            <div class="changelog-head">
+                <a href="#change005">#005</a>
+                <date>2020/08/28 19:16:11</date>
+            </div>
+            <div class="changelog-body">
+                <ul>
+                    <li><i class="flaticon-check"></i><span class="changes">更新魔方的喚醒機制以及掉落機制</span></li>
+                    <ul class="changes-description">
+                        <li>綠色魔方之核有機率什麼事都沒發生</li>
+                        <li>魔方之核無法升級了</li>
+                        <li>簡化魔方殘骸，<strong>相關請至改版商人處進行更新</strong></li>
+                    </ul>
+                    <li><i class="flaticon-check"></i><span class="changes">更新終界龍、凋零、遠古守衛的掉落物</span></li>
+                    <ul class="changes-description">
+                        <li>藍色魔方之核加入掉落物列表</li>
+                    </ul>
+                    <li><i class="flaticon-check"></i><span class="changes">更新終界龍、凋零、遠古守衛的掉落物計算式</span></li>
+                    <ul class="changes-description">
+                        <li>死亡的當下，周圍玩家越多則掉落越多</li>
+                    </ul>
+                    <li><i class="flaticon-check"></i><span class="changes">更新未知魔方系統</span></li>
+                    <ul class="changes-description">
+                        <li>除了寶藏附魔，其餘皆可</li>
+                        <li>新增攻擊速度/移動速度/抗擊退 三種屬性</li>
+                        <li>未知魔方可以解析的範圍為1~6級/+1~+4/+1%~+10%</li>
+                        <li>附魔魔方可以解析的範圍為1~2/2~4/3~6級</li>
+                        <li>屬性魔方可以解析的範圍+1~+5/+5%~+20%</li>
+                    </ul>
+                    <li><i class="flaticon-minus"></i><span class="changes">移除測試系統 - 「異變體」</span></li>
+                    <li><i class="flaticon-check"></i><span class="changes">修正部分翻譯</span></li>
+                </ul>
+            </div>
+        </div>
         <!-- 0004 -->
         <div class="changelog" id="change004">
             <div class="changelog-head">
@@ -90,43 +125,46 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-var $root = $('html, body');
+    var $root = $('html, body');
 
-$('a[href^="#"]').click(function() {
-    var href = $.attr(this, 'href');
+    $('a[href^="#"]').click(function () {
+        var href = $.attr(this, 'href');
 
-    $root.animate({
-        scrollTop: $(href).offset().top
-    }, 500, function () {
-        window.location.hash = href;
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+            window.location.hash = href;
+        });
+
+        return false;
     });
 
-    return false;
-});
+    if (window.location.hash) scroll(0, 0);
 
-if ( window.location.hash ) scroll(0,0);
+    setTimeout(function () {
+        scroll(0, 0);
+    }, 1);
 
-setTimeout( function() { scroll(0,0); }, 1);
+    $(window).bind("load", function () {
+        $(function () {
 
-$(window).bind("load", function() {
-    $(function() {
+            // your current click function
+            $('.scroll').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top + 'px'
+                }, 500, 'swing');
+            });
 
-    // your current click function
-    $('.scroll').on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top + 'px'
-        }, 500, 'swing');
-    });
+            // *only* if we have anchor on the url
+            if (window.location.hash) {
 
-    // *only* if we have anchor on the url
-    if(window.location.hash) {
+                // smooth scroll to the anchor id
+                $('html, body').animate({
+                    scrollTop: $(window.location.hash).offset().top + 'px'
+                }, 500, 'swing');
+            }
 
-        // smooth scroll to the anchor id
-        $('html, body').animate({
-            scrollTop: $(window.location.hash).offset().top + 'px'
-        }, 500, 'swing');
-    }
-
-});})
+        });
+    })
 </script>
