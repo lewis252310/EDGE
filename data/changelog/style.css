@@ -64,12 +64,12 @@ section {
 
 [id^=change]:target {
     background-color: #3d3f4b;
-    -webkit-transition: all 0.5s linear;
+    transition: 0.5s ease;
 }
 
 .highlight {
     background-color: #3d3f4b;
-    -webkit-transition: all 0.5s linear;
+    transition: 0.5s ease;
 }
 
 .spotlight {
